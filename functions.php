@@ -28,3 +28,5 @@ if ( version_compare( $GLOBALS['wp_version'], $theme_options['wp_min_version'], 
 	require get_template_directory() . '/functions/back-compat.php';
 	return;
 }
+
+?>

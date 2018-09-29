@@ -13,7 +13,15 @@ h1
 h2 
   font-size: 1.75em
 h3 
-  font-size: 1.25em
+  font-size: 1.50em
+h4
+  font-size: 1.1em
+h5
+  font-size: 0.8em 
+  color: #9c9595
+  font-weight: 400
+
+
 p 
   color: hsla(0, 0%, 0%, 0.8)
 
@@ -26,6 +34,9 @@ p
    font-size: 1.625em
   h3 
     font-size: 1.375em
+
+
+/* col-md-15 */
 
 .col-xs-15,
 .col-sm-15,
@@ -56,6 +67,19 @@ p
     width: 20%
     float: left
 
+.traegifts__button
+  background-color: #555151
+  padding: 0.1em 1.3em
+  color: #fff
+  text-decoration: none
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  
+.traegifts__button:hover 
+   background-color: hsla(227, 100%, 60%, .1)
+   color: #325DFF
+.btn
+  border-radius: 0
 
 
 /* Main */
@@ -68,96 +92,83 @@ p
 	float: left
 
 
-/* Navbar */
-.navbar
-  padding-left: 0
-  background-color: #ffffff!important
-  .navbar-left
-    padding-left: 0
-
-.nav-link
-  border-top: 2px solid #1C96FF
-  padding: 5px 0 9px 0
-  font-size: 1rem;
-li
-  width: 254px
-  margin-right: 17px
 
 
-/* Header */
-.header
-	padding-left: 0
-.header__image
-	width: 100%
 
 
-/* Products Grid */
-.products__grid--title
-  padding: 30px 0 10px;
-  margin-bottom: 30px;
-  font-weight: 400;
-  border-bottom: 1px solid #2494ff;
-  color: #2494ff
 
 
-.highlights__product--contentimage
-	height: 219px
-	width: 226px
 
-.products__grid--image
-	width: 100%
 
-.products__grid--name
-	margin-top: 1rem
-	margin-bottom: 0
+.featured-post
+  position: relative
+  z-index: 1
+  font-family: 'open sans', sans-serif
 
-.products__grid--name a
+.featured-post .caption 
+  position: absolute
+  -webkit-border-radius: 15px
+  border-radius: 15px
+  top: 15px
+  right: 15px
+  padding: 10px
+  color: #fff
+  width: 90%
+  background: #000
+  opacity: .7
+  
+  font-size: 17px
+  z-index: 2
+
+
+
+
+
+// SLIDER //
+.featured-post .caption p 
+  padding-bottom: 50px
+
+.featured-post .slider-title 
+  font-size: 22px
+  font-weight: 600
   text-decoration: none
-  color: #4D4848
-  font-size: 16px
-  font-weight: 400
-h2.products__grid--name
-   line-height: 0.8!important
+  display: block
+  margin-bottom: 10px
+  font-family: 'oswald', sans-serif
 
-.products__grid--price p
-  margin-top: 12px
+.featured-post a:visited 
+  color: #fff
 
-.products__grid--list li
-  list-style: none
-  float: left
-  width: 100%;
-.products__grid
-  box-sizing: border-box
+.featured-post .btn 
+  text-align: center
+  text-decoration: none
+  background: #F29729
+  position: absolute
+  bottom: 10px
+  right: 10px
+  padding: 10px
 
-.col-md-3.products__grid--item
-  float: left
-
-.bloghome__article--image
-  width: 100%
-
-.bloghome__article li
-  list-style: none
+@media only screen and (max-width: 767px) 
+  .featured-post .caption 
+    width: 95%
+    opacity: .70
+    
+  .featured-post p
+    font-size: 75%
+  
+  .caption .btn 
+    padding: 5px
   
 
-.bloghome__name
-  padding: 30px 0 10px;
-  margin-bottom: 30px;
-  font-weight: 400;
-  border-bottom: 1px solid #2494ff;
-  color: #2494ff
-.bloghome__name--title
-  margin-top: 1rem
-  margin-bottom: 0
-.bloghome__article--description
-  background-color: white
-  padding: 10px 20px 20px 20px
-.bloghome__article--description-container
-  background-color: grey
-.bloghome__article
-  overflow: hidden
-  float: left
-.bloghome__article--inner  
-  width: 100%
+@media only screen and (max-width: 650px)
+  .featured-post p 
+    display: none
+  
+  
+
+
+
+
 
     
 
