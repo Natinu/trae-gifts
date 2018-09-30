@@ -313,35 +313,7 @@
 		</div><!--Blog row -->
 	</div><!--Blog containerfluid -->
 
-	<!-- Testimonial -->
-	<div class="testimonial container col-md-12">
-		<section>
-			<div class="flexslider">
-				<ul class="slides">
-
-					<?php
-					query_posts(array('posts_per_page' => 3, 'category_name' => 'Featured'));
-					if(have_posts()) : while(have_posts()) : the_post();
-						?>
-
-						<li class="featured-post">
-							<?php the_post_thumbnail('slider-image'); ?>
-							<div class="caption">
-								<a href="<?php the_permalink(); ?>" class="slider-title"><?php the_title();?></a>
-								<?php the_excerpt(); ?>
-								<a href="<?php the_permalink(); ?>" class="btn">Read More!</a>
-							</div>
-						</li>
-						<?php
-					endwhile;
-				endif;
-				wp_reset_query();
-				?>
-				</ul>
-			</div>
-		</section>
-	</div>
-
+	
 	<!-- Opinions -->
 	<div class="opinion col-md-12">
 		<div class="row">
