@@ -65,7 +65,7 @@
 	
 	<!-- Copyright -->
 	<div class="copyright col-md-12">
-		<p class="copyright__text">traeGifts 2018. Todos los derechos reservados</p>
+		<p class="copyright__text">TraeGifts 2018. Todos los derechos reservados</p>
 	</div>
 
 

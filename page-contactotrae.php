@@ -26,10 +26,10 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Todos los regalos</a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item ">
 						<a class="nav-link" href="#">Blog</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="#">Contacto</a>
 					</li>
 				</ul>
@@ -39,7 +39,8 @@
 
 	<!-- imagen de fondo -->
 	<div class="contacto__background col-md-12 responsive">
-		<form class="contacto__form offset-md-3 col-md-6">
+		<div class="col-sm-12 offset-md-3 col-md-6">
+		<form class="contacto__form">
 			<div class="contacto__form--description">
 				<h1>Necesito mi regalo</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -60,15 +61,25 @@
 				<textarea class="form-control" name="comentarios" rows="10" cols="40" placeholder="Escribe aquí tu mensaje"></textarea>
 			</div>
 			
-			<div class="contacto__form--button">
-				<a class="btn traegifts__button" type="submit" href="#">Enviar</a>
+			<div class="contactotrae__button">
+				<a class="btn traegifts__button--contactotrae" type="submit" href="#">Enviar</a>
 			</div>
+
+
 		</form>
+		</div>
 
 	</div>
 
 
-ACA MAPA API----
+	<div class="jumbotron api__googlemaps">
+    <!--The div element for the map -->
+    <div id="map"></div>
+    
+		
+
+
+	</div>
 
 
 
@@ -85,7 +96,29 @@ ACA MAPA API----
 
 		<?php get_footer()?>
 	</div><!-- Main Right -->
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Trae
+  var traegifts = {lat: -33.4366471, lng: -70.6448424};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: traegifts});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: traegifts, map: map});
 
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoOj1vZKIRsp2seGbp_Sd4Fot8ldqAH1M
+&callback=initMap">
+    </script>
 </body>
 </html>
 <?php get_sidebar()?>

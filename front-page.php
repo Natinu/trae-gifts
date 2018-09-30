@@ -16,7 +16,7 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<div class="navbar-left col-md-10">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<div class="nav--componente__menu"> </div>
 						<a class="nav-link" href="#">Para Empleados <span class="sr-only">(current)</span></a>
 					</li>
