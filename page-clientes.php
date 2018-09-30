@@ -16,12 +16,12 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<div class="navbar-left col-md-10">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item ">
 						<div class="nav--componente__menu"> </div>
-						<a class="nav-link" href="#">Para Empleados <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">Regalos para Empleados <span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Para Clientes</a>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Regalos para Clientes</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Todos los regalos</a>
@@ -45,7 +45,7 @@
 		<div class="products__grid--category">
 			
 			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Productos Destacados</h3>
+				<h3 class="products__grid--title">Regalos para Clientes</h3>
 				<div class="products__grid--category-menu-right">
 					<label id="products__sortform--select">Ordenar por</label>
 					<select id="products__sortform form-control" class="products__sortform" name="" >
