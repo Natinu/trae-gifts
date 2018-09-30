@@ -16269,6 +16269,9 @@ li.nav-item {
   font-weight: 400;
   border-bottom: 1px solid #2494ff;
   color: #2494ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .highlights__product--contentimage {
@@ -16313,6 +16316,29 @@ h2.products__grid--name {
 
 .col-md-3.products__grid--item {
   float: left;
+}
+
+.products__grid--category-menu {
+  margin-bottom: 30px;
+}
+
+select.products__sortform {
+  margin-left: 10px;
+  color: #9c9595;
+  font-size: 0.8em;
+}
+
+.products__grid--pagination-item {
+  float: left;
+}
+
+.products__grid--pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Blog Home*/
@@ -16440,10 +16466,21 @@ li.footer__sidebar--item {
   color: white;
 }
 
+.footer__sentence {
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+
+.footer__sentence--outstanding {
+  font-family: 'Lobster', cursive;
+}
+
 /* Opinion */
 
 .opinion {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .opinion .opinion__inner {

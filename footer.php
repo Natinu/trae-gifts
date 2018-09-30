@@ -3,6 +3,15 @@
 <?php } ?>
 
 <!-- Footer -->
+
+<div class="footer__sentence col-md-12">
+	<h1 class="footer__sentence"> HACEMOS <span class="footer__sentence--
+outstanding">LUGARES DE TRABAJO</span> MÁS FELICES</h1>
+	
+</div>
+
+
+
 	<div class="footer col-md-12">
 		<div class="jumbotron footer__background">
 			<div class="row">
