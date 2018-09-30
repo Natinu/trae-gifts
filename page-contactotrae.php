@@ -39,10 +39,11 @@
 
 	<!-- imagen de fondo -->
 	<div class="contacto__background col-md-12 responsive">
-		<div class="col-sm-12 offset-md-3 col-md-6">
+		<div class="contacto__background--opacity col-md-12">
+		<div class="col-sm-12 offset-md-3 col-md-6 ">
 		<form class="contacto__form">
 			<div class="contacto__form--description">
-				<h1>Necesito mi regalo</h1>
+				<h1>¡Contáctanos!</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				
 
@@ -68,7 +69,7 @@
 
 		</form>
 		</div>
-
+		</div>
 	</div>
 
 

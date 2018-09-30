@@ -16615,17 +16615,19 @@ span.footer__sentence--outstanding {
   margin-bottom: 1em;
 }
 
+/* Contactotrae */
+
 .contacto__background {
   background-image: url(../images/form-background.png?fcf8256fe80dd4dc5238a8e94cda0601);
   background-image-height: 100%;
   width: 100%;
   background-size: cover;
   margin: 2rem 0;
-  padding: 4rem 0;
+  padding: 0;
 }
 
 .contacto__form {
-  padding: 0;
+  padding: 4rem 0;
 }
 
 .contactotrae__title--inputbox {
@@ -16657,6 +16659,39 @@ span.footer__sentence--outstanding {
   display: -ms-flexbox;
   display: flex;
   display-justify-content: center;
+}
+
+.contacto__form--description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+
+.contacto__form--description h1 {
+  font-family: 'Lobster two';
+  font-size: 2.5em;
+}
+
+.contacto__form--description p {
+  color: white;
+}
+
+.contacto__background--opacity {
+  background-color: #1c96ff66;
+  background-color-height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.text-muted {
+  color: white !important;
 }
 
 .traegifts__button--contactotrae:hover {
