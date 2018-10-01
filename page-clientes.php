@@ -1,42 +1,5 @@
 <?php get_header()?>
 
-<!-- Main Left-->
-<div class="main__left col-md-1">
-	<img class="main__left--image" src="<?php echo get_template_directory_uri(); ?>/src/images/logotraegifts.png" alt="logo principal">
-</div>
-
-<!-- Main Right-->
-<div class="main__right col-md-11">
-
-	<!-- NavBar-->
-	<nav class="navbar col-md-12 navbar-expand-lg navbar-light bg-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<div class="navbar-left col-md-10">
-				<ul class="navbar-nav">
-					<li class="nav-item ">
-						<div class="nav--componente__menu"> </div>
-						<a class="nav-link" href="#">Regalos para Empleados <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Regalos para Clientes</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Todos los regalos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
 	
 	<!-- Products Grid -->
 	<div class="products__grid container-fluid">
@@ -45,7 +8,7 @@
 		<div class="products__grid--category">
 			
 			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Regalos para Clientes</h3>
+				<h3 class="products__grid--title">Regalos para clientes</h3>
 				<div class="products__grid--category-menu-right">
 					<label id="products__sortform--select">Ordenar por</label>
 					<select id="products__sortform form-control" class="products__sortform" name="" >
@@ -267,76 +230,9 @@
 		
 	</div>
 
-	<!-- Suscríbete -->
-	<div class="subscribe__background jumbotron col-md-12">
-		<div class="subscribe__container">
-			<div class="subscribe__container--description">
-			<h1 class="subscribe__title">
-				suscríbete a nuestra newsletter </h1> 
-			<h1 class="subscribe__title--cursiva">y estarás al tanto de todas nuestras novedades</h1>
-			</div>							
-			
-			<div class="subscribe__title--buttom">
-				<input class="subscribe__title--inputbox"type="text" name="email" required-entry placeholder="Tu dirección de correo electrónico">
-				<a class="btn traegifts__button--subscribe" href="#">Suscríbete</a>
-			</div>
-			<div>
-			<input type="checkbox" id="cbox2" value="second_checkbox"> <label class="subscribe__title--checkbox" for="cbox2"> Acepto recibir el Newsletter de TraeGifts en mi buzón de correo electrónico </label>
-			</div>
-		</div>
+	<?php get_template_part('_includes/iOS', 'opinions') ?>
 
-	</div>
-
-	
-
-	<!-- Opinions -->
-	<div class="opinion col-md-12">
-		<div class="row">
-			<!-- Opinion 1 -->
-			<div class="col-md-4">
-				<div class="opinion__inner">
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<h4>Gran producto</h4>
-					<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, maxime a? Nobis corporis atque, quae laudantium accusamus </p>
-					<h5>Nataly Medina</h5>
-				</div>
-			</div>
-
-			<!-- Opinion 2 -->
-			<div class="col-md-4">
-				<div class="opinion__inner">
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<h4>Gran producto</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, maxime a? Nobis corporis atque, quae laudantium accusamus </p>
-					<h5>Nataly Medina</h5>
-				</div>
-			</div>
-
-			<!-- Opinion 3 -->
-			<div class="col-md-4">
-				<div class="opinion__inner">
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<i class="opinion__inner--star fas fa-star"></i>
-					<h4>Gran producto</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, maxime a? Nobis corporis atque, quae laudantium accusamus n</p>
-					<h5>Nataly Medina</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
+	<?php get_template_part('_includes/iOS', 'subscribe') ?>
 
 	<?php get_footer()?>
 </div><!-- Main Right -->
