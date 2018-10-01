@@ -72,32 +72,17 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui, quae quasi tenetur, vitae quas labore expedita maiores doloribus iste harum, facere. Suscipit atque ad aut ducimus sed, saepe nam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repellat accusamus dolorem quod quia? Rem tempora quia debitis, temporibus ipsa vel, nemo odio quos ad repellat architecto unde quod voluptas.</p>
 
 						<div class="article__main--image container-fluid">
-							<img class="article__main--image-blog" src="<?php echo get_template_directory_uri(); ?>/src/images/article01.png" alt="logo principal">
+							<img class="article__main--image-blog" src="<?php echo get_template_directory_uri(); ?>/src/images/article02.png" alt="logo principal">
 						</div>
+
+						<hr>
 
 					</div>
 				</div>
 				
 
 
-				<!--product pagination-->
-				<div class="products__grid--pagination container-fluid">
-					<nav aria-label="Products results pages">
-						<ul class="pagination pagination-sm">
-							<li class="page-item products__grid--pagination-item disabled">
-								<a class="page-link" href="#" tabindex="-1">Anterior</a>
-							</li>
-							<li class="page-item products__grid--pagination-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item active products__grid--pagination-item">
-								<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="page-item products__grid--pagination-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item products__grid--pagination-item">
-								<a class="page-link" href="#">Siguiente</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+				
 			</div> <!-- col-md-9-->
 
 

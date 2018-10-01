@@ -16879,3 +16879,34 @@ div.subscribe__container--description {
   margin: 2rem 0;
 }
 
+.productinner__container--thumbanails-image {
+  width: 30%;
+}
+
+.productinner__container--thumbanails {
+  margin: 1rem 0;
+}
+
+.productinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 0;
+}
+
+.productinner__container--title {
+  padding: 0.5rem 0;
+}
+
+.productinner__container--image {
+  width: 100%;
+}
+
+.productinner__container--price {
+  font-size: 1.7rem;
+}
+
+.productinner__container--button-cotizar {
+  font-size: 1.3em;
+}
+
