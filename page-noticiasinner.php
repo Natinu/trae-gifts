@@ -37,10 +37,10 @@
 		</div>
 	</nav>
 
-	<!-- Blogmain Grid -->
+	<!-- article Grid -->
 	<div class="products__grid container-fluid">
 
-		<!-- Blogmain Title -->
+		<!-- article Title -->
 		<div class="products__grid--category">
 			
 			<div class="products__grid--category-menu">
@@ -51,69 +51,33 @@
 
 
 		<!-- blog -->
-		<div class="blogmain container-fluid col-md-12">
-			<div class="blogmain__container col-md-9">
-				<ul>
-					<!-- Blog Item 1 -->
-					<div class="blogmain__article col-md-12">
-						<li class="blogmain__article--inner">
-							<a href="" title="La importancia de premiar a sus empleados" class="blogmain__article--link">
-								<img class="blogmain__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog01.jpg" alt="Articulo sobre como premiar a tus empleados">
-							</a>
-							<div class="blogmain__article--description-container">
-								<div class="blogmain__article--description">
-									<h4 class="blogmain__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
-									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
-									<div class="blogmain__article--readmore">
-										<a class="btn traegifts__button" href="#">Leer más</a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</div>
+		<div class="article container-fluid col-md-12">
+			<div class="c col-md-9">
+				<div class="article__header">
+					<h1 class="entry-title">titulo</h1>
+					<p class="entry-meta">fecha 28/89/34</p>
+					<div class="entry-content">
 
-					<!-- Blog Item 2 -->
-					<div class="blogmain__article col-md-12">
-						<li class="blogmain__article--inner">
-							<a href="" title="La importancia de premiar a sus empleados" class="blogmain__article--link">
-								<img class="blogmain__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog01.jpg" alt="Articulo sobre como premiar a tus empleados">
-							</a>
-							<div class="blogmain__article--description-container">
-								<div class="blogmain__article--description">
-									<h4 class="blogmain__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
-									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
-									<div class="blogmain__article--readmore">
-										<a class="btn traegifts__button" href="#">Leer más</a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui, quae quasi tenetur, vitae quas labore expedita maiores doloribus iste harum, facere. Suscipit atque ad aut ducimus sed, saepe nam.</p>
 
-					<!-- Blog Item 3 -->
-					<div class="blogmain__article col-md-12">
-						<li class="blogmain__article--inner">
-							<a href="" title="La importancia de premiar a sus empleados" class="blogmain__article--link">
-								<img class="blogmain__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog01.jpg" alt="Articulo sobre como premiar a tus empleados">
-							</a>
-							<div class="blogmain__article--description-container">
-								<div class="blogmain__article--description">
-									<h4 class="blogmain__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
-									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
-									<div class="blogmain__article--readmore">
-										<a class="btn traegifts__button" href="#">Leer más</a>
-									</div>
-								</div>
-							</div>
-						</li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui, quae quasi tenetur, vitae quas labore expedita maiores doloribus iste harum, facere. Suscipit atque ad aut ducimus sed, saepe nam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repellat accusamus dolorem quod quia? Rem tempora quia debitis, temporibus ipsa vel, nemo odio quos ad repellat architecto unde quod voluptas.</p>
+						<div class="article__main--image container-fluid">
+							<img class="article__main--image-blog" src="<?php echo get_template_directory_uri(); ?>/src/images/article01.png" alt="logo principal">
+						</div>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui, quae quasi tenetur, vitae quas labore expedita maiores doloribus iste harum, facere. Suscipit atque ad aut ducimus sed, saepe nam.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui, quae quasi tenetur, vitae quas labore expedita maiores doloribus iste harum, facere. Suscipit atque ad aut ducimus sed, saepe nam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repellat accusamus dolorem quod quia? Rem tempora quia debitis, temporibus ipsa vel, nemo odio quos ad repellat architecto unde quod voluptas.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, qui, quae quasi tenetur, vitae quas labore expedita maiores doloribus iste harum, facere. Suscipit atque ad aut ducimus sed, saepe nam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repellat accusamus dolorem quod quia? Rem tempora quia debitis, temporibus ipsa vel, nemo odio quos ad repellat architecto unde quod voluptas.</p>
+
+						<div class="article__main--image container-fluid">
+							<img class="article__main--image-blog" src="<?php echo get_template_directory_uri(); ?>/src/images/article01.png" alt="logo principal">
+						</div>
+
 					</div>
-				</ul>
+				</div>
+				
 
 
 				<!--product pagination-->
@@ -137,20 +101,20 @@
 			</div> <!-- col-md-9-->
 
 
-			<div class="blogmain__sidebar col-md-3">
+			<div class="article__sidebar col-md-3">
 				<ul>
 					<!-- Blog Sidebar Item 1 -->
-					<div class="blogmain__sidebar col-md-12">
-						<li class="blogmain__sidebar--inner">
+					<div class="article__sidebar col-md-12">
+						<li class="article__sidebar--inner">
 							
-							<div class="blogmain__sidebar--description-container">
-								<div class="blogmain__sidebar--description">
-									<h4 class="blogmain__sidebar--name">
+							<div class="article__sidebar--description-container">
+								<div class="article__sidebar--description">
+									<h4 class="article__sidebar--name">
 										Todo lo que necesitas para hacer feliz a tus empreados y clientes
 									</h4>
 									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas,.</p>
-									<input class="blogmain__sidebar--input" type="" name="">
-									<div class="blogmain__sidebar--readmore">
+									<input class="article__sidebar--input" type="" name="">
+									<div class="article__sidebar--readmore">
 										<a class="btn traegifts__button" href="#">Suscríbete</a>
 									</div>
 								</div>
@@ -159,12 +123,12 @@
 					</div>
 
 					<!-- Blog Sidebar Item 2 -->
-					<div class="blogmain__sidebar col-md-12">
-						<li class="blogmain__sidebar--inner">
+					<div class="article__sidebar col-md-12">
+						<li class="article__sidebar--inner">
 							
-							<div class="blogmain__sidebar--description-container">
-								<div class="blogmain__sidebar--description">
-									<h4 class="blogmain__sidebar--name">
+							<div class="article__sidebar--description-container">
+								<div class="article__sidebar--description">
+									<h4 class="article__sidebar--name">
 										Todo lo que necesitas para hacer feliz a tus empreados y clientes
 									</h4>
 									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas,.</p>
@@ -175,12 +139,12 @@
 					</div>
 
 					<!-- Blog Sidebar Item 3 -->
-					<div class="blogmain__sidebar col-md-12">
-						<li class="blogmain__sidebar--inner">
+					<div class="article__sidebar col-md-12">
+						<li class="article__sidebar--inner">
 							
-							<div class="blogmain__sidebar--description-container">
-								<div class="blogmain__sidebar--description">
-									<h4 class="blogmain__sidebar--name">
+							<div class="article__sidebar--description-container">
+								<div class="article__sidebar--description">
+									<h4 class="article__sidebar--name">
 										Todo lo que necesitas para hacer feliz a tus empreados y clientes
 									</h4>
 									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas,.</p>
