@@ -16079,6 +16079,10 @@ p {
   color: rgba(0, 0, 0, 0.8);
 }
 
+div {
+  display: block;
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 2em;
@@ -16149,10 +16153,11 @@ p {
   border-radius: 0;
 }
 
-/* Main */
+/* Main TraeGifts */
 
 .main__left {
   float: left;
+  float-position: fixed;
 }
 
 .main__left .main__left--image {
@@ -16161,6 +16166,18 @@ p {
 
 .main__right {
   float: left;
+}
+
+.container__content--mainright {
+  margin-top: 5rem;
+}
+
+.main__left--container {
+  position: relative;
+}
+
+.main__left--logo {
+  position: absolute;
 }
 
 .featured-post {
@@ -16253,7 +16270,10 @@ ul#menu-nav__traegifts {
 
 .navbar {
   padding-left: 0;
-  background-color: #ffffff !important;
+  background-color: #fffffff0 !important;
+  position: fixed;
+  padding-top: 15px;
+  z-index: 100;
 }
 
 .navbar .navbar-left {
@@ -16295,7 +16315,7 @@ li.nav-item {
 /* Products Grid */
 
 .products__grid--title {
-  padding: 30px 0 10px;
+  padding: 0 0 10px;
   margin-bottom: 30px;
   font-weight: 400;
   border-bottom: 1px solid #2494ff;
@@ -16343,6 +16363,7 @@ h2.products__grid--name {
 .products__grid {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-left: 0;
 }
 
 .col-md-3.products__grid--item {
@@ -16636,6 +16657,7 @@ span.footer__sentence--outstanding {
   background-size: cover;
   margin: 2rem 0;
   padding: 0;
+  padding-margin-top: 5rem;
 }
 
 .contacto__form {
@@ -16921,5 +16943,13 @@ div.subscribe__container--description {
 
 .productinner__container--button-cotizar {
   font-size: 1.3em;
+}
+
+.features__container--title {
+  display: inline-block;
+}
+
+.features__container--description {
+  display: block;
 }
 

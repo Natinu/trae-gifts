@@ -1,7 +1,4 @@
-<?php get_header()?>
-
-	<!-- Products Grid -->
-	<div class="products__grid container-fluid">
+<div class="products__grid container-fluid col-md-12">
 
 		<!-- Products title -->
 		<div class="products__grid--category">
@@ -30,9 +27,11 @@
 					<!-- Item 1 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -47,9 +46,11 @@
 					<!-- Item 2 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -64,9 +65,11 @@
 					<!-- Item 3 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -81,9 +84,11 @@
 					<!-- Item 4 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -98,9 +103,11 @@
 					<!-- item 5-->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -123,9 +130,11 @@
 					<!-- Item 6 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -140,9 +149,11 @@
 					<!-- Item 7 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -157,9 +168,11 @@
 					<!-- Item 8 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -174,9 +187,11 @@
 					<!-- Item 9 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -191,9 +206,11 @@
 					<!-- Item 10 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
+							<div class="imagen">
 							<a href="" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
 							</a>
+						</div>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
 									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
@@ -208,61 +225,3 @@
 			</div><!-- col-md-12-->
 		</div><!--row-->
 	</div><!--product grid-->
-
-	<!--product pagination-->
-	<div class="products__grid--pagination container-fluid">
-		<nav aria-label="Products results pages">
-			<ul class="pagination pagination-sm">
-				<li class="page-item products__grid--pagination-item disabled">
-					<a class="page-link" href="#" tabindex="-1">Anterior</a>
-				</li>
-				<li class="page-item products__grid--pagination-item"><a class="page-link" href="#">1</a></li>
-				<li class="page-item active products__grid--pagination-item">
-					<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="page-item products__grid--pagination-item"><a class="page-link" href="#">3</a></li>
-				<li class="page-item products__grid--pagination-item">
-					<a class="page-link" href="#">Siguiente</a>
-				</li>
-			</ul>
-		</nav>
-		
-	</div>
-
-	<?php get_template_part('_includes/iOS', 'opinions') ?>
-
-	<?php get_template_part('_includes/iOS', 'subscribe') ?>
-
-	<div class="features col-md-12" >
-		<div class="row">
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">Atención al cliente</span>
-		</div>
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">description</span>
-		</div>
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">Atención al cliente</span>
-		</div>
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">Envío gratis</span>
-		</div>
-		
-	</div>
-
-	<?php get_footer()?>
-	
-</div><!-- Main Right -->
-
-</body>
-</html>
-<?php get_sidebar()?>
-<?php get_header()?>

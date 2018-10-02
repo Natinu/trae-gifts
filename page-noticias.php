@@ -1,13 +1,13 @@
 <?php get_header()?>
 
 	<!-- Blogmain Grid -->
-	<div class="products__grid container-fluid">
+	<div class="products__grid container-fluid col-md-12">
 
 		<!-- Blogmain Title -->
 		<div class="products__grid--category">
 			
 			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Blog</h3>
+				<h3 class="products__grid--title">Blog prueba aaaaaaaaaaa</h3>
 			</div>
 
 		</div>
@@ -21,14 +21,14 @@
 					<div class="blogmain__article col-md-12">
 						<li class="blogmain__article--inner">
 							<a href="" title="La importancia de premiar a sus empleados" class="blogmain__article--link">
-								<img class="blogmain__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog01.jpg" alt="Articulo sobre como premiar a tus empleados">
+								<img class="blogmain__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog02.jpg" alt="Articulo sobre como premiar a tus empleados">
 							</a>
 							<div class="blogmain__article--description-container">
 								<div class="blogmain__article--description">
 									<h4 class="blogmain__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
+										<a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a>
 									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
+									<p>22222222222222Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
 									<div class="blogmain__article--readmore">
 										<a class="btn traegifts__button" href="#">Leer más</a>
 									</div>
