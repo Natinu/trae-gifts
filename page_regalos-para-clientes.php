@@ -1,5 +1,8 @@
-<?php get_header()?>
 
+<?php /* Template Name: regalos para clientes */ ?>
+
+
+<?php get_header()?>
 
 	
 	<!-- Products Grid -->
@@ -9,7 +12,7 @@
 		<div class="products__grid--category">
 			
 			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Todos los regalos</h3>
+				<h3 class="products__grid--title">Regalos para clientes</h3>
 				<div class="products__grid--category-menu-right">
 					<label id="products__sortform--select">Ordenar por</label>
 					<select id="products__sortform form-control" class="products__sortform" name="" >
@@ -235,11 +238,9 @@
 
 	<?php get_template_part('_includes/iOS', 'subscribe') ?>
 
-	<?php get_footer()?>
-	
+<?php get_footer()?>
 </div><!-- Main Right -->
+<?php get_sidebar()?>
 
 </body>
 </html>
-<?php get_sidebar()?>
-<?php get_header()?>

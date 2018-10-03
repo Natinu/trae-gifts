@@ -1,11 +1,18 @@
+
+<?php /* Template Name: front-page */ ?>
+
+
 <?php get_header()?>	
 
 	<!-- Header -->
 	<div class="header col-md-12">
-		<img class="header__image header__image--home" src="<?php echo get_template_directory_uri(); ?>/src/images/header-01.png">
+		<?php $image = get_field('imagen-header'); ?>
+		<img class="header__image header__image--home" src="<?php echo $image['url']; ?>" 
+		alt="<?php echo $image['alt']; ?>" />
+	</div>
 	</div>
 
-	<!-- Products Grid -->
+	<!-- Products Grid-->
 	<div class="products__grid container-fluid">
 
 		<!-- Products title -->
@@ -276,6 +283,41 @@
 		</div><!--Blog row -->
 	</div><!--Blog containerfluid -->
 
+	<div class="container">
+		<h1 class="text-center">Consultando Clima mediante ajax</h1>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<select class="form-control" id="select">
+						<option>seleciones una ubicacion</option>
+						<option value="scl">santiago, regiónMetropolitana</option>
+						<option value="ccp">Concepción, Región del Bio Bio</option>
+					</select>
+					<img class="img-responsive"src="">
+				</div>
+			</div>
+			<div class="col-md-8 hidden="true" id="escondido">
+				<h2 id="resumen"></h2>
+				<table class="table table-striped">
+					<tr>
+						<td>Sensacion termica</td>
+						<td id="sensacion"></td>
+					</tr>
+					<tr>
+						<td>Probabilidad lluvia</td>
+						<td id="probabilidad"></td>
+					</tr>
+					<tr>
+						<td>Humedad relativa</td>
+						<td id="humedad"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+
 	<?php get_template_part('_includes/iOS', 'opinions') ?>
 
 
@@ -283,8 +325,7 @@
 
 <?php get_footer()?>
 </div><!-- Main Right -->
-
+<?php get_sidebar()?>
 </body>
 </html>
-<?php get_sidebar()?>
-<?php get_header()?>
+

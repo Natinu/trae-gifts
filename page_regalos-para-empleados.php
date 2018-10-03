@@ -1,6 +1,9 @@
+
+<?php /* Template Name: regalos para empleados */ ?>
+
+
 <?php get_header()?>
 
-	
 	<!-- Products Grid -->
 	<div class="products__grid container-fluid">
 
@@ -8,7 +11,7 @@
 		<div class="products__grid--category">
 			
 			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Regalos para clientes</h3>
+				<h3 class="products__grid--title">Regalos para empleados</h3>
 				<div class="products__grid--category-menu-right">
 					<label id="products__sortform--select">Ordenar por</label>
 					<select id="products__sortform form-control" class="products__sortform" name="" >
@@ -234,10 +237,35 @@
 
 	<?php get_template_part('_includes/iOS', 'subscribe') ?>
 
-	<?php get_footer()?>
+	<div class="features col-md-12" >
+		<div class="row">
+		<div class="features__container col-md-3">
+			<i class="features__container--icon fas fa-user-lock"></i>
+			<span class="features__container--title">Envío gratis</span>
+			<span class="features__container--description">Atención al cliente</span>
+		</div>
+		<div class="features__container col-md-3">
+			<i class="features__container--icon fas fa-user-lock"></i>
+			<span class="features__container--title">Envío gratis</span>
+			<span class="features__container--description">description</span>
+		</div>
+		<div class="features__container col-md-3">
+			<i class="features__container--icon fas fa-user-lock"></i>
+			<span class="features__container--title">Envío gratis</span>
+			<span class="features__container--description">Atención al cliente</span>
+		</div>
+		<div class="features__container col-md-3">
+			<i class="features__container--icon fas fa-user-lock"></i>
+			<span class="features__container--title">Envío gratis</span>
+			<span class="features__container--description">Envío gratis</span>
+		</div>
+		
+	</div>
+
+<?php get_footer()?>
 </div><!-- Main Right -->
+<?php get_sidebar()?>
+
 
 </body>
 </html>
-<?php get_sidebar()?>
-<?php get_header()?>

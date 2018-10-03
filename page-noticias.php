@@ -211,10 +211,10 @@
 
 
 
-		<?php get_footer()?>
-	</div><!-- Main Right -->
+<?php get_footer()?>
+</div><!-- Main Right -->
+<?php get_sidebar()?>
 
 </body>
 </html>
 <?php get_sidebar()?>
-<?php get_header()?>

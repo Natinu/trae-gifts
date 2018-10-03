@@ -27,7 +27,7 @@
 
 	<!-- Main Left-->
 	<div class="main__left container-fluid hidden-xs col-md-1">
-		<div class="main__left--container hidden-xs">
+		<div class="main__left--container hidden-xs hidden-xs">
 		<a class="main__left--logo hidden-xs" href="http://localhost:8888/">
 			<img class="main__left--image hidden-xs" src="<?php echo get_template_directory_uri(); ?>/src/images/logotraegifts.png" alt="logo principal">
 		</a>
@@ -36,15 +36,14 @@
 
 
 		<!--NavBar Trae gifts -->
+		
 		<div class="offset-md-1 col-md-11">
-			<nav class="navbar col-md-11 navbar-expand-lg navbar-light bg-light">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  				</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		
+				<div class="collapse navbar-collapse" id="navbarNav">					
 					<div class="navbar-left col-md-10">
 
 						<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
@@ -55,6 +54,9 @@
 				</div>
 			</nav>
 		</div>
+
+			
+		
 
 		<!-- Main Right-->
 	

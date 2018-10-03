@@ -1,8 +1,14 @@
+
+<?php /* Template Name: contacto */ ?>
+
 <?php get_header()?>
 
 	<!-- imagen de fondo -->
-	<div class="contacto__background col-md-12 responsive">
-		<div class="contacto__background--opacity col-md-12">
+
+
+	
+
+		<div class="contacto__background--opacity col-md-12 " style="background-image: url( '<?php the_field('Imagen'); ?>') ">
 		<div class="col-sm-12 offset-md-3 col-md-6 ">
 		<form class="contacto__form">
 			<div class="contacto__form--description">
@@ -45,20 +51,12 @@
 	<?php get_template_part('_includes/iOS', 'subscribe') ?>
 
 
+<?php get_footer()?>
+</div><!-- Main Right -->
+<?php get_sidebar()?>
 
 
 
-
-
-
-
-
-
-
-
-
-		<?php get_footer()?>
-	</div><!-- Main Right -->
 <script>
 // Initialize and add the map
 function initMap() {
@@ -85,4 +83,3 @@ function initMap() {
 </body>
 </html>
 <?php get_sidebar()?>
-<?php get_header()?>
