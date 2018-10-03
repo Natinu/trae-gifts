@@ -16587,6 +16587,10 @@ span.footer__sentence--outstanding {
   border-top: none;
 }
 
+.blogmain__article--description-fecha {
+  color: #979090;
+}
+
 .blogmain__article--description-container {
   background-color: grey;
 }
@@ -16912,6 +16916,10 @@ div.subscribe__container--description {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2rem 0;
+}
+
+.entry-content-header {
+  margin-bottom: 1rem;
 }
 
 .productinner__container--thumbanails-image {

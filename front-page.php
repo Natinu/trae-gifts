@@ -217,68 +217,41 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
+				<?php // Display blog posts on any page @ https://m0n.co/l
+			$temp = $wp_query; $wp_query= null;
+			$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3' . '&paged='.$paged);
+			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+				<div class="container-fluid">
 		<!-- Bloghome List -->
 				<ul>
+					
+
 					<!-- Blog Item 1 -->
-					<div class="bloghome__article col-md-4">
-						<li class="bloghome__article--inner">
-							<a href="" title="La importancia de premiar a sus empleados" class="bloghome__article--link">
-								<img class="bloghome__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog01.jpg" alt="Articulo sobre como premiar a tus empleados">
-							</a>
-							<div class="bloghome__article--description-container">
-								<div class="bloghome__article--description">
-									<h4 class="bloghome__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
-									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
-									<div class="bloghome__article--readmore">
-										<a class="btn traegifts__button" href="#">Leer más</a>
+							<div class="bloghome__article col-md-4">
+								<li class="bloghome__article--inner">
+									<a class="bloghome__article--link" href="<?php the_permalink(); ?>">
+										<img class= "bloghome__article--image" src="<?php the_post_thumbnail_url(); ?>" >
+									</a>
+									<div class="bloghome__article--description-container">
+										<div class="bloghome__article--description">
+											<h4 class="bloghome__article--name">
+												<a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h4>
+											<?php the_excerpt(); ?>
+											<div class="bloghome__article--readmore">
+												<a class="btn traegifts__button" href="<?php the_permalink(); ?>">Leer más</a>
+											</div>
+										</div>
 									</div>
-								</div>
+								</li>
 							</div>
-						</li>
-					</div>
 
-					<!-- Blog Item 2 -->
-					<div class="bloghome__article col-md-4">
-						<li class="bloghome__article--inner">
-							<a href="" title="La importancia de premiar a sus empleados" class="bloghome__article--link">
-								<img class="bloghome__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog02.jpg" alt="Articulo sobre como premiar a tus empleados">
-							</a>
-							<div class="bloghome__article--description-container">
-								<div class="bloghome__article--description">
-									<h4 class="bloghome__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
-									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
-									<div class="bloghome__article--readmore">
-										<a class="btn traegifts__button" href="#">Leer más</a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</div>
+					
 
-					<!-- Blog Item 3 -->
-					<div class="bloghome__article col-md-4">
-						<li class="bloghome__article--inner">
-							<a href="" title="La importancia de premiar a sus empleados" class="bloghome__article--link">
-								<img class="bloghome__article--image" src="<?php echo get_template_directory_uri(); ?>/src/images/blog03.jpg" alt="Articulo sobre como premiar a tus empleados">
-							</a>
-							<div class="bloghome__article--description-container">
-								<div class="bloghome__article--description">
-									<h4 class="bloghome__article--name">
-										<a href="" title="Mug happy"> La importancia de premiar a sus empleados </a>
-									</h4>
-									<p>Has sentido la emoción que surge en los discursos de las premiaciones: las lágrimas, la gratitud, la satisfacción de saber que todo el trabajo duro ...</p>
-									<div class="bloghome__article--readmore">
-										<a class="btn traegifts__button" href="#">Leer más</a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</div>		
+					
 				</ul>
+
+				<?php endwhile; ?>
+			</div>
 			</div> <!-- col-md-12 -->
 		</div><!--Blog row -->
 	</div><!--Blog containerfluid -->
@@ -316,7 +289,6 @@
 			</div>
 		</div>
 	</div>
-	
 
 	<?php get_template_part('_includes/iOS', 'opinions') ?>
 
