@@ -1,12 +1,9 @@
-<?php get_header() ?>
-
-
 <!-- Products Grid-->
 <div class="products__grid container-fluid">
 
 	<!-- Products title -->
 	<div class="products__grid--category">
-		<h3 class="products__grid--title">Productos locos</h3>
+		<h3 class="products__grid--title">Productos Destacados</h3>
 	</div>
 
 	<!-- Products List-->
@@ -52,13 +49,3 @@
 		</div><!-- col-md-12-->
 	</div><!--row-->
 </div><!--product grid-->
-
-
-<!-- Item 1 -->
-
-
-
-
-
-<?php get_sidebar() ?>
-<?php get_footer() ?>

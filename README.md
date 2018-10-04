@@ -4,9 +4,11 @@
 Tema Trae Gifts 2018, diseñado para la promoción de productos, con enfoque mobile. 
 
 * Mobile-first, Responsive Layout
-* Custom Colors
-* Custom Header
-* Menu Description
+* Menu administrable
+* Header administrable
+* Productos administrables
+* Promociones administrables
+
 
 
 ### Despliegue

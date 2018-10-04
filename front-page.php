@@ -12,42 +12,9 @@
 	</div>
 	</div>
 
-	<!-- Products Grid-->
-	<div class="products__grid container-fluid">
+	<?php get_template_part('_includes/iOS', 'productosdestacados') ?>
+	[ngg src="galleries" display="basic_thumbnail"]
 
-		<!-- Products title -->
-		<div class="products__grid--category">
-			<h3 class="products__grid--title">Productos Destacados</h3>
-		</div>
-
-		<!-- Products List-->
-		<!-- First Column of Products-->
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="products__grid--list">
-
-					<!-- Item 1 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
-
-					
-				</ul>
-			</div><!-- col-md-12-->
-		</div><!--row-->
-	</div><!--product grid-->
 
 	<!--Blog Home-->
 	<div class="bloghome container-fluid">
@@ -132,6 +99,16 @@
 	</div>
 
 	<?php get_template_part('_includes/iOS', 'opinions') ?>
+
+	
+
+
+	<div class="header-promocional col-md-12">
+		<a href="http://localhost:8888/ofertas/">
+		<?php $image = get_field('imagen-promocional'); ?>
+		<img class="header__image header__image--home" src="<?php echo get_template_directory_uri(); ?>/src/images/bannerpromo.png"/>
+		</a>
+	</div>
 
 
 

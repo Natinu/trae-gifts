@@ -1,4 +1,8 @@
-
+<?php 
+/*
+	Template Name: seccionproductos
+*/
+	?>
 <?php get_header() ?>
 
 <!-- article Grid -->

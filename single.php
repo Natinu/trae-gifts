@@ -2,6 +2,7 @@
 
 <!-- article Grid -->
 <!-- article title -->
+SINGLE
 
 <div class="products__grid--category">
 	<div class="products__grid--category-menu">

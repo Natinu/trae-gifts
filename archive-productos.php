@@ -3,6 +3,8 @@
 Template Name: Destacado
 */
 get_header();
+
+
 $temp = $wp_query;
 $wp_query = null;
 $wp_query = new WP_Query();
@@ -12,4 +14,6 @@ if ( $wp_query->have_posts() ) : while ($wp_query->have_posts()) : $wp_query->th
 	the_content();
 	endwhile;
 endif;
+
+sFFFFFF
 get_footer(); ?>

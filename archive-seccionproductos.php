@@ -1,21 +1,29 @@
-<?php 
-/*
-	Template Name: categoriaproductos
-*/
-	?>
-
-archive-
 
 	<?php get_header() ?>
+
+	
 
 
 	<!-- Products Grid-->
 	<div class="products__grid container-fluid">
-
 		<!-- Products title -->
 		<div class="products__grid--category">
-			<h3 class="products__grid--title">Productos lcoso</h3>
+			
+			<div class="products__grid--category-menu">
+				<h3 class="products__grid--title">Regalos para clientes</h3>
+				<div class="products__grid--category-menu-right">
+					<label id="products__sortform--select">Ordenar por</label>
+					<select id="products__sortform form-control" class="products__sortform" name="" >
+						<option value="position:desc">--</option>
+						<option value="price:asc">Precio de menor a mayor</option>
+						<option value="price:desc">Precio de mayor a menor</option>
+
+					</select>
+				</div>
+			</div>
+
 		</div>
+
 
 		<!-- Products List-->
 		<!-- First Column of Products-->
@@ -63,11 +71,19 @@ archive-
 	</div><!--product grid-->
 
 
-	<!-- Item 1 -->
+
+
+	<?php get_template_part('_includes/iOS', 'opinions') ?>
+
+	<?php get_template_part('_includes/iOS', 'subscribe') ?>
+
+<?php get_footer()?>
+</div><!-- Main Right -->
+<?php get_sidebar()?>
+
+</body>
+</html>
 
 
 
 
-
-	<?php get_sidebar() ?>
-	<?php get_footer() ?>

@@ -51,13 +51,15 @@
 					<h4 class="footer__sidebar--title">
 						Acerca de Trae Gifts
 					</h4>
-					<a href="#" class="footer__sidebar--link">
+					
 						<ul>
+							<a href="http://localhost:8888/quienessomos/" class="footer__sidebar--link">
 							<li class="footer__sidebar--item">Nosotros</li>
+							</a>
 							<li class="footer__sidebar--item">ventas@traegifts</li>
 							<li class="footer__sidebar--item">22 6986911</li>
 						</ul>
-					</a>
+					
 				</div>
 			</div>
 		</div>

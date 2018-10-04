@@ -72,34 +72,34 @@ function traegifts_productos() {
 	register_post_type( 'seccionproductos', $args );
 }
 
-add_action( 'init', 'lapizzeria_especialidades' );
-function lapizzeria_especialidades() {
+add_action( 'init', 'traegifts_promociones' );
+function traegifts_promociones() {
 	$labels = array(
-		'name'               => _x( 'Pizzas', 'lapizzeria' ),
-		'singular_name'      => _x( 'Pizzas', 'post type singular name', 'lapizzeria' ),
-		'menu_name'          => _x( 'Pizzas', 'admin menu', 'lapizzeria' ),
-		'name_admin_bar'     => _x( 'Pizzas', 'add new on admin bar', 'lapizzeria' ),
-		'add_new'            => _x( 'Add New', 'book', 'lapizzeria' ),
-		'add_new_item'       => __( 'Add New Pizza', 'lapizzeria' ),
-		'new_item'           => __( 'New Pizzas', 'lapizzeria' ),
-		'edit_item'          => __( 'Edit Pizzas', 'lapizzeria' ),
-		'view_item'          => __( 'View Pizzas', 'lapizzeria' ),
-		'all_items'          => __( 'All Pizzas', 'lapizzeria' ),
-		'search_items'       => __( 'Search Pizzas', 'lapizzeria' ),
-		'parent_item_colon'  => __( 'Parent Pizzas:', 'lapizzeria' ),
-		'not_found'          => __( 'No Pizzases found.', 'lapizzeria' ),
-		'not_found_in_trash' => __( 'No Pizzases found in Trash.', 'lapizzeria' )
+		'name'               => _x( 'promociones', 'promocionestraegifts' ),
+		'singular_name'      => _x( 'promociones', 'post type singular name', 'promocionestraegifts' ),
+		'menu_name'          => _x( 'promociones', 'admin menu', 'promocionestraegifts' ),
+		'name_admin_bar'     => _x( 'promociones', 'add new on admin bar', 'promocionestraegifts' ),
+		'add_new'            => _x( 'Add New', 'book', 'promocionestraegifts' ),
+		'add_new_item'       => __( 'Add New Pizza', 'promocionestraegifts' ),
+		'new_item'           => __( 'New promociones', 'promocionestraegifts' ),
+		'edit_item'          => __( 'Edit promociones', 'promocionestraegifts' ),
+		'view_item'          => __( 'View promociones', 'promocionestraegifts' ),
+		'all_items'          => __( 'All promociones', 'promocionestraegifts' ),
+		'search_items'       => __( 'Search promociones', 'promocionestraegifts' ),
+		'parent_item_colon'  => __( 'Parent promociones:', 'promocionestraegifts' ),
+		'not_found'          => __( 'No promocioneses found.', 'promocionestraegifts' ),
+		'not_found_in_trash' => __( 'No promocioneses found in Trash.', 'promocionestraegifts' )
 	);
 
 	$args = array(
 		'labels'             => $labels,
-    'description'        => __( 'Description.', 'lapizzeria' ),
+    'description'        => __( 'Description.', 'promocionestraegifts' ),
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'especialidades' ),
+		'rewrite'            => array( 'slug' => 'ofertas' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
@@ -108,7 +108,7 @@ function lapizzeria_especialidades() {
     'taxonomies'          => array( 'category' ),
 	);
 
-	register_post_type( 'especialidades', $args );
+	register_post_type( 'seccionpromociones', $args );
 }
 
 ?>

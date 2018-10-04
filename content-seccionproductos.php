@@ -1,21 +1,4 @@
-<?php 
-/*
-	Template Name: categoriaproductos
-*/
-	?>
-
-archive-
-
-	<?php get_header() ?>
-
-
-	<!-- Products Grid-->
-	<div class="products__grid container-fluid">
-
-		<!-- Products title -->
-		<div class="products__grid--category">
-			<h3 class="products__grid--title">Productos lcoso</h3>
-		</div>
+<div class="products__grid container-fluid">
 
 		<!-- Products List-->
 		<!-- First Column of Products-->
@@ -62,12 +45,3 @@ archive-
 		</div><!--row-->
 	</div><!--product grid-->
 
-
-	<!-- Item 1 -->
-
-
-
-
-
-	<?php get_sidebar() ?>
-	<?php get_footer() ?>
