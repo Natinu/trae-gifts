@@ -16370,6 +16370,12 @@ h2.products__grid--name {
   float: left;
 }
 
+.products__grid--item-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .products__grid--category-menu {
   margin-bottom: 30px;
 }

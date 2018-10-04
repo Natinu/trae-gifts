@@ -1,3 +1,11 @@
+<?php 
+/*
+	Template Name: categoriaproductos
+*/
+	?>
+
+
+
 <?php get_header() ?>
 
 
@@ -17,8 +25,8 @@
 			<?php if (have_posts()) { ?>
 
 				<ul class="products__grid--list">
-					<div class="col-md-15 products__grid--item ">
 						<?php while ( have_posts() ) { the_post(); ?>
+							<div class="col-md-15 products__grid--item ">
 							<li class="products__grid--item">
 								<a href="<?php the_permalink() ?>" title="Mug happy" class="products__grid--link">
 									<?php $image = get_field('imagen-producto'); ?>
@@ -28,9 +36,9 @@
 
 								<div class="products__grid--info">
 									<a href="<?php the_permalink() ?>">
-										<h2 class="products__grid--name">
+										<h4 class="products__grid--name">
 											<?php the_title() ?>
-										</h2>
+										</h4>
 									</a>
 
 									<?php the_excerpt() ?>
@@ -39,8 +47,9 @@
 									<p><?php echo get_field('precio'); ?></p>
 								</div>
 							</li>
+							</div>
 						<?php }; ?>
-					</div>
+					
 
 				</ul>
 

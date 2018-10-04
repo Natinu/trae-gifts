@@ -41,7 +41,7 @@ function traegifts_productos() {
 		'menu_name'          => _x( 'productos', 'admin menu', 'productostraegifts' ),
 		'name_admin_bar'     => _x( 'productos', 'add new on admin bar', 'productostraegifts' ),
 		'add_new'            => _x( 'Add New', 'book', 'productostraegifts' ),
-		'add_new_item'       => __( 'Add New Pizza', 'productostraegifts' ),
+		'add_new_item'       => __( 'Añade un nuevo producto', 'productostraegifts' ),
 		'new_item'           => __( 'New productos', 'productostraegifts' ),
 		'edit_item'          => __( 'Edit productos', 'productostraegifts' ),
 		'view_item'          => __( 'View productos', 'productostraegifts' ),
