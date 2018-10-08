@@ -13,14 +13,7 @@
 	<div class="products__grid container-fluid">
 
 		<!-- Products title -->
-		<div class="products__grid--category">
-			
-			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Productos destacados</h3>
-				
-			</div>
-
-		</div>
+		
 
 		<!-- Products List-->
 		<!-- First Column of Products-->
@@ -48,12 +41,12 @@
 					<!-- Item 2 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
+							<a href="#" title="Mug happy" class="products__grid--link">
 								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/papel01.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Papeles de regalo personalizados! </a>
+									<a href="#" title="Mug happy"> Papeles de regalo personalizados! envíanos tu diseño.</a>
 								</h2>
 							</div>
 							<div class="products__grid--price">
@@ -65,16 +58,16 @@
 					<!-- Item 3 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+							<a href="#" title="Mug happy" class="products__grid--link">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/libreta01.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
+									<a href="#" title="Mug happy"> Pendrive personalizado con logo corporativo </a>
 								</h2>
 							</div>
 							<div class="products__grid--price">
-								<p>$5990</p>
+								<p>$9990</p>
 							</div>
 						</li>
 					</div>
@@ -83,7 +76,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/pd-02.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
@@ -100,7 +93,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/pd-01.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
@@ -125,7 +118,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/termos.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
@@ -142,7 +135,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/copa04.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
@@ -159,7 +152,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/pd-07.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
@@ -176,7 +169,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/botle01.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">
@@ -193,7 +186,7 @@
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/pd-03.png" alt="Mug diseño happy">
 							</a>
 							<div class="products__grid--info">
 								<h2 class="products__grid--name">

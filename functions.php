@@ -60,7 +60,7 @@ function traegifts_productos() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'categoriaproductos' ),
+		'rewrite'            => array( 'slug' => 'productos' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
@@ -109,6 +109,48 @@ function traegifts_promociones() {
 	);
 
 	register_post_type( 'seccionpromociones', $args );
+}
+
+
+//Custom Post type REGALOS 
+
+add_action( 'init', 'traegifts_categorias' );
+function traegifts_categorias() {
+	$labels = array(
+		'name'               => _x( 'regalos', 'traegifts' ),
+		'singular_name'      => _x( 'regalos', 'post type singular name', 'traegifts' ),
+		'menu_name'          => _x( 'Regalos', 'admin menu', 'traegifts' ),
+		'name_admin_bar'     => _x( 'regalos', 'add new on admin bar', 'traegifts' ),
+		'add_new'            => _x( 'Add New', 'book', 'traegifts' ),
+		'add_new_item'       => __( 'Add New Pizza', 'traegifts' ),
+		'new_item'           => __( 'New regalos', 'traegifts' ),
+		'edit_item'          => __( 'Edit regalos', 'traegifts' ),
+		'view_item'          => __( 'View regalos', 'traegifts' ),
+		'all_items'          => __( 'All regalos', 'traegifts' ),
+		'search_items'       => __( 'Search regalos', 'traegifts' ),
+		'parent_item_colon'  => __( 'Parent regalos:', 'traegifts' ),
+		'not_found'          => __( 'No regaloses found.', 'traegifts' ),
+		'not_found_in_trash' => __( 'No regaloses found in Trash.', 'traegifts' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+    'description'        => __( 'Description.', 'traegifts' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'regalo' ), // url
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+    'taxonomies'          => array( 'category' ),
+	);
+
+	register_post_type( 'categorias', $args );
 }
 
 ?>

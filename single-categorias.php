@@ -1,6 +1,6 @@
 <?php 
 /*
-	Template Name: seccionproductos
+	Template Name: categorias
 */
 	?>
 
@@ -20,35 +20,35 @@
 	<!-- blog -->
 	<div class="productinner col-md-12">
 		<div class="productinner__container--thumbanails container-fluid col-md-2">
-								<div class="row">
-								
-								<a class="productinner__container--thumbanails-link container-fluid" href="#">
-										<li class="carousel__images" data-target="#carouselExampleIndicators" data-slide-to="0">
-											<?php $image = get_field('imagen-producto'); ?>
-											<img class="productinner__container--thumbanails-image" src="<?php echo $image['url']; ?>" 
-											alt="<?php echo $image['alt']; ?>" />
+			<div class="row">
 
-										</li>
-										<li class="carousel__images" data-target="#carouselExampleIndicators" data-slide-to="1">
-											<?php $image = get_field('imagen-producto01'); ?>
-											<img class="productinner__container--thumbanails-image" src="<?php echo $image['url']; ?>" 
-											alt="<?php echo $image['alt']; ?>" />
+				<a class="productinner__container--thumbanails-link container-fluid" href="#">
+					<li class="carousel__images" data-target="#carouselExampleIndicators" data-slide-to="0">
+						<?php $image = get_field('imagen-regalo'); ?>
+						<img class="productinner__container--thumbanails-image" src="<?php echo $image['url']; ?>" 
+						alt="<?php echo $image['alt']; ?>" />
 
-										</li>
-										<li class="carousel__images" data-target="#carouselExampleIndicators" data-slide-to="2">
-											<?php $image = get_field('imagen-producto02'); ?>
-											<img class="productinner__container--thumbanails-image" src="<?php echo $image['url']; ?>" 
-											alt="<?php echo $image['alt']; ?>" />
+					</li>
+					<li class="carousel__images" data-target="#carouselExampleIndicators" data-slide-to="1">
+						<?php $image = get_field('imagen-regalo01'); ?>
+						<img class="productinner__container--thumbanails-image" src="<?php echo $image['url']; ?>" 
+						alt="<?php echo $image['alt']; ?>" />
 
-										</li>
-								</a>
-							
-							</div>
-							</div>
-		<div class=" col-md-6">
+					</li>
+					<li class="carousel__images" data-target="#carouselExampleIndicators" data-slide-to="2">
+						<?php $image = get_field('imagen-regalo02'); ?>
+						<img class="productinner__container--thumbanails-image" src="<?php echo $image['url']; ?>" 
+						alt="<?php echo $image['alt']; ?>" />
 
+					</li>
+				</a>
+
+			</div>
+		</div>
+
+		<!-- Slider Regalos -->
+		<div class="col-md-6">
 			<div class="article__header">
-
 				<div class="entry-content">
 					<?php if ( have_posts() ) { ?>
 						<?php while ( have_posts() ) { ?>
@@ -60,19 +60,19 @@
 
 									<div class="carousel-inner">
 										<div class="carousel-item active">
-											<?php $image = get_field('imagen-producto'); ?>
+											<?php $image = get_field('imagen-regalo'); ?>
 											<img class="d-block w-100" src="<?php echo $image['url']; ?>" alt="First slide">
-											slide 1
+											
 
 										</div>
 										<div class="carousel-item">
-											<?php $image = get_field('imagen-producto01'); ?>
-											<img class="d-block w-100" src="<?php echo $image['url']; ?>" alt="Second slide"> slide 2
+											<?php $image = get_field('imagen-regalo01'); ?>
+											<img class="d-block w-100" src="<?php echo $image['url']; ?>" alt="Second slide"> 
 										</div>
 										<div class="carousel-item">
-											<?php $image = get_field('imagen-producto02'); ?>
+											<?php $image = get_field('imagen-regalo02'); ?>
 											<img class="d-block w-100" src="<?php echo $image['url']; ?>" alt="Third slide">
-											slide 3
+										
 										</div>
 									</div>
 									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -87,11 +87,6 @@
 
 
 							</div>
-
-
-
-							
-							
 
 						<?php } ?>
 					<?php } else { ?>
@@ -117,14 +112,6 @@
 			</div>
 		</div> <!-- col-md-3 -->
 	</div> <!-- col-md-12 -->
-
-
-
-
-
-
-
-
 
 
 	<?php get_footer()?>

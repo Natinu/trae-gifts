@@ -4,7 +4,7 @@
 
 			
 			<!-- Opinion 1 -->
-			<div class="col-md-4">
+			<div class="opinion__inner--container col-md-4">
 				<div class="opinion__inner">
 					<i class="opinion__inner--star fas fa-star"></i>
 					<i class="opinion__inner--star fas fa-star"></i>
@@ -18,7 +18,7 @@
 			</div>
 
 			<!-- Opinion 2 -->
-			<div class="col-md-4">
+			<div class="opinion__inner--container col-md-4">
 				<div class="opinion__inner">
 					<i class="opinion__inner--star fas fa-star"></i>
 					<i class="opinion__inner--star fas fa-star"></i>
@@ -32,7 +32,7 @@
 			</div>
 
 			<!-- Opinion 3 -->
-			<div class="col-md-4">
+			<div class=" opinion__inner--container col-md-4">
 				<div class="opinion__inner">
 					<i class="opinion__inner--star fas fa-star"></i>
 					<i class="opinion__inner--star fas fa-star"></i>

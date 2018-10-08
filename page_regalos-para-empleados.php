@@ -4,214 +4,81 @@
 
 <?php get_header()?>
 
-	<!-- Products Grid -->
-	<div class="products__grid container-fluid">
+<div class="products__grid container-fluid">
 
-		<!-- Products title -->
-		<div class="products__grid--category">
-			
-			<div class="products__grid--category-menu">
-				<h3 class="products__grid--title">Regalos para empleados</h3>
-				<div class="products__grid--category-menu-right">
-					<label id="products__sortform--select">Ordenar por</label>
-					<select id="products__sortform form-control" class="products__sortform" name="" >
-						<option value="position:desc">--</option>
-						<option value="price:asc">Precio de menor a mayor</option>
-						<option value="price:desc">Precio de mayor a menor</option>
+	<!-- Products title -->
+	<div class="products__grid--category">
+		<div class="products__grid--category-menu">
+			<h3 class="products__grid--title">Regalos para empleados</h3>
 
-					</select>
-				</div>
+			<!-- Products filtro -->
+			<div class="products__grid--category-menu-right">
+				<label id="products__sortform--select">Ordenar por</label>
+				<select id="products__sortform form-control" class="products__sortform" name="" >
+					<option value="position:desc">--</option>
+					<option value="price:asc">Precio de menor a mayor</option>
+					<option value="price:desc">Precio de mayor a menor</option>
+				</select>
 			</div>
-
 		</div>
 
-		<!-- Products List-->
-		<!-- First Column of Products-->
-		<div class="row">
-			<div class="col-md-12">
+	</div>
+
+
+	<!-- Llamado Regalos 'para empleados' -->
+
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<?php
+			$args = array (
+				'post_type' => 'categorias',
+				'posts_per_page' => 50,
+				'orderby' => 'title',
+				'order' => 'ASC',
+				'category_name' =>'pizzas'
+
+			);
+
+			$pizzas = new WP_Query($args);
+			while($pizzas->have_posts()): $pizzas->the_post(); ?>
 				<ul class="products__grid--list">
-
-					<!-- Item 1 -->
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
+							<a href="<?php the_permalink() ?>" title="Mug happy" class="products__grid--link">
+
+								<img class= "products__grid--image" src="<?php the_post_thumbnail_url(); ?>" >
+								
 							</a>
 							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
+								<a href="<?php the_permalink() ?>">
+									<h4 class="products__grid--name">
+										<?php the_title() ?>
+									</h4>
+								</a>
+
+								<p><?php echo get_field('descripcion-corta'); ?></p>
 							</div>
 							<div class="products__grid--price">
-								<p>$5990</p>
+								<p><?php echo get_field('precio'); ?></p>
 							</div>
+							<a class="btn traegifts__button--subscribe" href="<?php the_permalink() ?>">Ver más</a>
+
 						</li>
 					</div>
+				<?php endwhile; wp_reset_postdata();?>
+			</ul>
+			
+		</div><!-- col-md-12-->
+	</div><!--row-->
 
-					<!-- Item 2 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
 
-					<!-- Item 3 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
 
-					<!-- Item 4 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
 
-					<!-- item 5-->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
-				</ul>
-			</div><!-- col-md-12-->
-		</div><!--row-->
 
-		<!-- Second Column of Products-->
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="products__grid--list">
 
-					<!-- Item 6 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
 
-					<!-- Item 7 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
-
-					<!-- Item 8 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
-
-					<!-- Item 9 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
-
-					<!-- Item 10 -->
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="" title="Mug happy" class="products__grid--link">
-								<img class="products__grid--image" src="<?php echo get_template_directory_uri(); ?>/src/images/tazon01.png" alt="Mug diseño happy">
-							</a>
-							<div class="products__grid--info">
-								<h2 class="products__grid--name">
-									<a href="" title="Mug happy"> Mug happy smile, para tu café de la mañana </a>
-								</h2>
-							</div>
-							<div class="products__grid--price">
-								<p>$5990</p>
-							</div>
-						</li>
-					</div>
-				</ul>
-			</div><!-- col-md-12-->
-		</div><!--row-->
-	</div><!--product grid-->
 
 	<!--product pagination-->
 	<div class="products__grid--pagination container-fluid">
@@ -230,39 +97,16 @@
 				</li>
 			</ul>
 		</nav>
-		
+
 	</div>
 
 	<?php get_template_part('_includes/iOS', 'opinions') ?>
 
 	<?php get_template_part('_includes/iOS', 'subscribe') ?>
 
-	<div class="features col-md-12" >
-		<div class="row">
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">Atención al cliente</span>
-		</div>
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">description</span>
-		</div>
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">Atención al cliente</span>
-		</div>
-		<div class="features__container col-md-3">
-			<i class="features__container--icon fas fa-user-lock"></i>
-			<span class="features__container--title">Envío gratis</span>
-			<span class="features__container--description">Envío gratis</span>
-		</div>
-		
-	</div>
 
-<?php get_footer()?>
+
+	<?php get_footer()?>
 </div><!-- Main Right -->
 <?php get_sidebar()?>
 

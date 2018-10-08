@@ -41,6 +41,28 @@
 					<p>No hay elementos</p>
 				<?php } wp_reset_query(); ?>
 
+				<?php get_header()?>
+<?php
+		$args = array (
+			'post_type' => 'categorias',
+			'posts_per_page' => -1,
+			'orderby' => 'title',
+			'order' => 'ASC',
+			'category_name' =>'pizzas'
+
+		);
+		$pizzas = new WP_Query($args);
+			while($pizzas->have_posts()): $pizzas->the_post();
+			?>
+			
+
+			<ul>
+				<li>
+					<?php the_title() ?>
+				</li>
+			</ul>
+			<?php endwhile; wp_reset_postdata();?>
+
 			</div><!-- col-md-12-->
 		</div><!--row-->
 	</div><!--product grid-->

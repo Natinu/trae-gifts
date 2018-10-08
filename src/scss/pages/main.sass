@@ -28,6 +28,9 @@ p
 div
 	display: block
 
+img 
+	max-width: 100%
+	height: auto
 
 @media only screen and (max-width : 767px) 
 
@@ -37,6 +40,10 @@ div
 	 font-size: 1.625em
 	h3 
 		font-size: 1.375em
+
+
+
+
 
 
 /* col-md-15 */
@@ -53,22 +60,93 @@ div
 	width: 20%
 	float: left
 
-@media (min-width: 768px)
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 891px) 
 	.col-sm-15
 		width: 20%
 		float: left
 
+	.main__left--logo
+		display: none
+
+	.header_menu
+		flex-direction: column;
+
+	.menu-item
+		padding-top: 0.7rem;
+
+	.header-promocional
+		display: none
+
+	.opinion__inner
+		margin-bottom: 1rem
+
+	.footer__sidebar--left
+		text-align: center;
+		padding-top: 1rem!important
+
+	.main__left--image-nav
+		width: 80%
+
+	.navbar-toggler
+		main__right: 0.5rem
+
+	.products__grid--category
+		margin-top: 8rem!important
+
+	.footer__sidebar--right
+		display: none
+
+	.blogmain__sidebar
+		display: none
+
+	.api__googlemaps
+		margin-top: 2rem
+
+	ul#menu-nav__traegifts
+		flex-direction: column;
+
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px)
 	.col-md-15
 		width: 20%
 		float: left
 		padding-right: 8px;
 		padding-left: 8px;
+	.header-promocional
+		margin-top: 2rem
 
+	.navbar-brand
+		display: none;
+
+	.main__left--image-nav
+		display: none;
+
+	
+
+
+/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)
 	.col-lg-15
 		width: 20%
 		float: left
+
+	
+
+
+
+
+
+
+
 
 .traegifts__button
 	background-color: #555151
@@ -106,15 +184,6 @@ div
 .main__left--logo
 	position: absolute
 
-
-
-
-
-
-
-
-
-
 .featured-post
 	position: relative
 	z-index: 1
@@ -134,59 +203,6 @@ div
 	
 	font-size: 17px
 	z-index: 2
-
-
-
-
-
-// SLIDER //
-.featured-post .caption p 
-	padding-bottom: 50px
-
-.featured-post .slider-title 
-	font-size: 22px
-	font-weight: 600
-	text-decoration: none
-	display: block
-	margin-bottom: 10px
-	font-family: 'oswald', sans-serif
-
-.featured-post a:visited 
-	color: #fff
-
-.featured-post .btn 
-	text-align: center
-	text-decoration: none
-	background: #F29729
-	position: absolute
-	bottom: 10px
-	right: 10px
-	padding: 10px
-
-@media only screen and (max-width: 767px) 
-	.featured-post .caption 
-		width: 95%
-		opacity: .70
-		
-	.featured-post p
-		font-size: 75%
-	
-	.caption .btn 
-		padding: 5px
-	
-
-@media only screen and (max-width: 650px)
-	.featured-post p 
-		display: none
-	
-	
-
-
-
-
-
-		
-
 
 
 

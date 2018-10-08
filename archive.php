@@ -6,7 +6,7 @@
 
 	<!-- Products title -->
 	<div class="products__grid--category">
-		<h3 class="products__grid--title">Productos locos</h3>
+		<h3 class="products__grid--title">Promociones</h3>
 	</div>
 
 	<!-- Products List-->
@@ -27,11 +27,10 @@
 								</a>
 
 								<div class="products__grid--info">
-									<a href="<?php the_permalink() ?>">
-										<h2 class="products__grid--name">
+										<h5 class="products__grid--name">
 											<?php the_title() ?>
-										</h2>
-									</a>
+										</h5>
+									
 
 									<?php the_excerpt() ?>
 								</div>

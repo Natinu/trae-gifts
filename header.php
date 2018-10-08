@@ -38,10 +38,17 @@
 		<!--NavBar Trae gifts -->
 		
 		<div class="offset-md-1 col-md-11">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<nav class="navbar col-sm-12 navbar-expand-lg navbar-light bg-light">
+
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon">
+					</span>
 				</button>
+			<a class="main__left--logo-toggle" href="http://localhost:8888/">
+					<img class="main__left--image-nav hidden-xs" src="<?php echo get_template_directory_uri(); ?>/src/images/logo-horizontal.png" alt="logo principal">
+					</a>
 		
 				<div class="collapse navbar-collapse" id="navbarNav">					
 					<div class="navbar-left col-md-10">
