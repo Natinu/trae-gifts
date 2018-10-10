@@ -16123,8 +16123,13 @@ img {
 
 /* Small devices (tablets, 768px and up) */
 
-@media (max-width: 891px) {
+@media (max-width: 762px) {
   .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+
+  .col-xs-15 {
     width: 20%;
     float: left;
   }
@@ -16187,11 +16192,54 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .blogmain__container {
+    padding: 0;
+  }
+
+  .contacto__background--opacity {
+    margin-top: 8rem;
+  }
+
+  .bloghome__name--lista {
+    padding: 0;
+  }
+
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    padding: 0;
+    margin-top: 8rem;
+  }
+
+  .products__grid--category-home {
+    margin-top: 2rem;
+  }
+
+  .bloghome__name--container {
+    padding: 0;
+  }
+
+  .bloghome__name {
+    padding: 0;
+  }
+
+  .products__grid--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .products__grid--item {
+    margin: 0.3rem;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+@media (min-width: 763px) {
   .col-md-15 {
     width: 20%;
     float: left;
@@ -16210,14 +16258,28 @@ img {
   .main__left--image-nav {
     display: none;
   }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .products__grid--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .col-lg-15 {
     width: 20%;
     float: left;
+  }
+
+  .header-mobile {
+    display: none;
   }
 }
 
@@ -16535,10 +16597,6 @@ li.footer__sidebar--item {
   color: #9e9e9e;
 }
 
-.footer__sidebar--middle-image {
-  width: 75%;
-}
-
 .footer__container--rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16612,7 +16670,7 @@ span.footer__sentence--outstanding {
 
 .blogmain__article li {
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .blogmain__name {
@@ -16861,6 +16919,13 @@ div.subscribe__container--description {
 
 .subscribe__title--checkbox {
   font-size: 0.8em;
+}
+
+.subscribe__container--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
 }
 
 /* Blog Home*/

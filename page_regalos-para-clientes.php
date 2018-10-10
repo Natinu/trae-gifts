@@ -31,7 +31,8 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<?php
+				<ul class="products__grid--list">
+					<?php
 			$args = array (
 				'post_type' => 'categorias',
 				'posts_per_page' => 50,
@@ -43,7 +44,7 @@
 
 			$clientes = new WP_Query($args);
 			while($clientes->have_posts()): $clientes->the_post(); ?>
-				<ul class="products__grid--list">
+
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="<?php the_permalink() ?>" title="Mug happy" class="products__grid--link">
@@ -56,9 +57,10 @@
 									<h4 class="products__grid--name">
 										<?php the_title() ?>
 									</h4>
+									
 								</a>
 
-								<p><?php echo get_field('descripcion-corta'); ?></p>
+								
 							</div>
 							<div class="products__grid--price">
 								<p><?php echo get_field('precio'); ?></p>

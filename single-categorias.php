@@ -19,7 +19,7 @@
 	<!-- article -->
 	<!-- blog -->
 	<div class="productinner col-md-12">
-		<div class="productinner__container--thumbanails container-fluid col-md-2">
+		<div class="productinner__container--thumbanails container-fluid col-sm-2 col-md-2">
 			<div class="row">
 
 				<a class="productinner__container--thumbanails-link container-fluid" href="#">
@@ -47,7 +47,7 @@
 		</div>
 
 		<!-- Slider Regalos -->
-		<div class="col-md-6">
+		<div class="col-sm-10 col-md-6">
 			<div class="article__header">
 				<div class="entry-content">
 					<?php if ( have_posts() ) { ?>
@@ -99,7 +99,7 @@
 		</div> <!-- col-md-8-->
 
 		<!-- columna publicidad  -->
-		<div class="blogmain__sidebar col-md-4">
+		<div class="blogmain__sidebar col-sm-12 col-md-4">
 			<div class="productinner__container--description">
 				<h3 class="productinner__container--title products__grid--title"><?php the_title() ?></h3>
 				<p><?php the_content() ?></p>

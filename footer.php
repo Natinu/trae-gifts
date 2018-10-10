@@ -5,7 +5,8 @@
 <!-- Footer -->
 
 <div class="footer__sentence col-sm-12 col-md-12 ">
-	<h1 class="footer__sentence"> HACEMOS <span class="footer__sentence--outstanding">Lugares de trabajo</span> MÁS FELICES</h1>
+	<h1 class="footer__sentence"> HACEMOS 
+	<span class="footer__sentence--outstanding">Lugares de trabajo</span> MÁS FELICES</h1>
 	
 </div>
 

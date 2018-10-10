@@ -31,19 +31,20 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<?php
+				<ul class="products__grid--list">
+					<?php
 			$args = array (
 				'post_type' => 'categorias',
 				'posts_per_page' => 50,
 				'orderby' => 'title',
 				'order' => 'ASC',
-				'category_name' =>'pizzas'
+				'category_name' =>'para-empleados'
 
 			);
 
-			$pizzas = new WP_Query($args);
-			while($pizzas->have_posts()): $pizzas->the_post(); ?>
-				<ul class="products__grid--list">
+			$empleados = new WP_Query($args);
+			while($empleados->have_posts()): $empleados->the_post(); ?>
+
 					<div class="col-md-15 products__grid--item ">
 						<li class="products__grid--item">
 							<a href="<?php the_permalink() ?>" title="Mug happy" class="products__grid--link">
@@ -55,10 +56,11 @@
 								<a href="<?php the_permalink() ?>">
 									<h4 class="products__grid--name">
 										<?php the_title() ?>
+									
 									</h4>
 								</a>
 
-								<p><?php echo get_field('descripcion-corta'); ?></p>
+								
 							</div>
 							<div class="products__grid--price">
 								<p><?php echo get_field('precio'); ?></p>

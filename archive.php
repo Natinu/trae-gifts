@@ -20,11 +20,11 @@
 					<div class=" products__grid--item ">
 						<?php while ( have_posts() ) { the_post(); ?>
 							<li class="products__grid--item">
-								<a href="<?php the_permalink() ?>" title="Mug happy" class="products__grid--link">
+								
 									<?php $image = get_field('promo'); ?>
 									<img class="products__grid--image" src="<?php echo $image['url']; ?>" 
 									alt="<?php echo $image['alt']; ?>" />
-								</a>
+								
 
 								<div class="products__grid--info">
 										<h5 class="products__grid--name">

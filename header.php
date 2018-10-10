@@ -28,7 +28,7 @@
 	<!-- Main Left-->
 	<div class="main__left container-fluid hidden-xs col-md-1">
 		<div class="main__left--container hidden-xs hidden-xs">
-		<a class="main__left--logo hidden-xs" href="http://localhost:8888/">
+		<a class="main__left--logo hidden-xs" href="http://liker.cl/">
 			<img class="main__left--image hidden-xs" src="<?php echo get_template_directory_uri(); ?>/src/images/logotraegifts.png" alt="logo principal">
 		</a>
 		</div>
