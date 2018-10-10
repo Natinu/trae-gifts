@@ -74,51 +74,7 @@
 			
 		</div><!-- col-md-12-->
 	</div><!--row-->
-	<div class="row">
-		<div class="col-md-12">
-			
-				<ul class="products__grid--list">
-					<?php
-			$args = array (
-				'post_type' => 'categorias',
-				'posts_per_page' => 5,
-				'orderby' => 'title',
-				'order' => 'ASC',
-				'category_name' =>'todos-los-regalos'
-
-			);
-
-			$todos = new WP_Query($args);
-			while($todos->have_posts()): $todos->the_post(); ?>
-					<div class="col-md-15 products__grid--item ">
-						<li class="products__grid--item">
-							<a href="<?php the_permalink() ?>" title="Mug happy" class="products__grid--link">
-
-								<img class= "products__grid--image" src="<?php the_post_thumbnail_url(); ?>" >
-								
-
-							</a>
-							<div class="products__grid--info">
-								<a href="<?php the_permalink() ?>">
-									<h4 class="products__grid--name">
-										<?php the_title() ?>
-									</h4>
-								</a>
-
-							</div>
-							<div class="products__grid--price">
-								<p><?php echo get_field('precio'); ?></p>
-							</div>
-							<a class="btn traegifts__button--subscribe" href="<?php the_permalink() ?>">Ver más</a>
-
-
-						</li>
-					</div>
-				<?php endwhile; wp_reset_postdata();?>
-			</ul>
-			
-		</div><!-- col-md-12-->
-	</div><!--row-->
+	
 
 
 

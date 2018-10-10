@@ -18,16 +18,16 @@ Tema Trae Gifts 2018, diseñado para la promoción de productos, con enfoque mob
 
 1. Base de datos
 
-	nombre: likercl_regalos
-	usuario: likercl_nataly
-	contraseña: +W@$9BD{PXL3
+	* nombre: likercl_regalos
+	* usuario: likercl_nataly
+	* contraseña: +W@$9BD{PXL3
 
 2. Acceso WP
 	
-	url sitio: www.liker.cl
-	url acceso wp: www.liker.cl/wp-admin
-	usuario: natinu
-	contraseña: nati#nu1991
+	* url sitio: www.liker.cl
+	* url acceso wp: www.liker.cl/wp-admin
+	* usuario: natinu
+	* contraseña: nati#nu1991
 
 3. Versionamiento
 
