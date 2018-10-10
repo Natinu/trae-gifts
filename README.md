@@ -8,17 +8,28 @@ Tema Trae Gifts 2018, diseñado para la promoción de productos, con enfoque mob
 * Header administrable
 * Productos administrables
 * Promociones administrables
+* Se necesita de plugin ACF para su correcto funcionamiento
 
 
 
 ### Despliegue
 
-== Instalación ==
+== Información importante ==
 
-1. Descargar repositorio https://github.com/Natinu/trae-gifts
-2. Agregar a carpeta plugins dentro de 
+1. Base de datos
 
-3. Haga clic en el botón 'Activar' para usar su nuevo tema de inmediato.
+	nombre: likercl_regalos
+	usuario: likercl_nataly
+	contraseña: +W@$9BD{PXL3
 
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+2. Acceso WP
+	
+	url sitio: www.liker.cl
+	url acceso wp: www.liker.cl/wp-admin
+	usuario: natinu
+	contraseña: nati#nu1991
+
+3. Versionamiento
+
+Se uso Github para versionamiento. Descargar versión aquí https://github.com/Natinu/trae-gifts
+
